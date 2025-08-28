@@ -7,6 +7,8 @@
 class Circle : public Shape
 {
     public:
+        Circle();
+        ~Circle(); 
         void draw() override;
     private:
         std::string shape = "Circle";

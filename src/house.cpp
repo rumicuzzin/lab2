@@ -2,25 +2,21 @@
 #include <iostream>
 
 // Constructor
-House::House()
+House::House() : orientation(0.0)
 {
-    orientation = 0.0; // Initialize house orientation to 0 degrees
-    
+    std::cout << "House constructor called" << std::endl;
     // Create component shapes using dynamic allocation
     baseSquare = new Square();
     roofTriangle = new Triangle();
-    
-    std::cout << "House constructor called" << std::endl;
 }
 
 // Destructor
 House::~House()
 {
+    std::cout << "House destructor called" << std::endl;
     // Clean up dynamically allocated component shapes
     delete baseSquare;
     delete roofTriangle;
-    
-    std::cout << "House destructor called" << std::endl;
 }
 
 // Draw method implementation
@@ -56,4 +52,11 @@ void House::setOrientation(double degrees)
 double House::getOrientation() const
 {
     return orientation;
+}
+
+// Set location method
+void House::setLocation(int x, int y)
+{
+    location[0] = x;
+    location[1] = y;
 }

@@ -7,6 +7,7 @@ class Square : public Shape
 {
     public:
         Square();
+        ~Square();
         void draw() override;
 
         // Methods to handle orientation

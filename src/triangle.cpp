@@ -1,9 +1,9 @@
 #include "../headers/triangle.h"
 #include <iostream>
 
-Triangle::Triangle()
+Triangle::Triangle() : orientation(0.0)
 {
-    orientation = 0.0; 
+    std::cout << "Triangle constructor called" << std::endl;
 }
 
 Triangle::~Triangle()

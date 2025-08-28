@@ -16,6 +16,7 @@
 #include "../headers/triangle.h"    
 #include "../headers/house.h"
 #include "../headers/getInput.h"
+#include "../headers/duplex.h"
 
 
 

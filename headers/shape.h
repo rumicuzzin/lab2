@@ -12,7 +12,7 @@ class Shape
         static Shape* decide(int choice);
         virtual void draw() = 0;
         // Virtual destructor
-        virtual ~Shape() = default;
+        virtual ~Shape();
 
     protected:
         std::vector<int> location;

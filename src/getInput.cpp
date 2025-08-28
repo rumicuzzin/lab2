@@ -11,6 +11,11 @@ getInput::getInput()
     }; 
 }
 
+getInput::~getInput()
+{
+    std::cout << "getInput destructor called." << std::endl;
+}
+
 int* getInput::getChoice()
 {
     return choices;

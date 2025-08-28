@@ -1,11 +1,15 @@
 #include "../headers/square.h"
 #include <iostream>
 
-Square::Square()
+Square::Square() :  orientation(0.0)
 {
-    orientation = 0.0; 
+    std::cout << "Square constructor called." << std::endl;
 }
 
+Square::~Square()
+{
+    std::cout << "Square destructor called." << std::endl;
+}
 // Square Draw method
 void Square::draw()
 {

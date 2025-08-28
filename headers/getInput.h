@@ -5,6 +5,7 @@ class getInput
 {
     public:
         getInput();
+        ~getInput();
         int* getChoice();
         
     private:
