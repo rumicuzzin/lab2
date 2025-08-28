@@ -1,0 +1,10 @@
+# Object files
+*.o
+
+# Executables (no extension)
+*
+!*/
+!*.*
+
+# macOS system files
+.DS_Store
